@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:attenuverter_mixer-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1973,4 +1974,70 @@ F 3 "~" V 7700 5500 50  0001 C CNN
 	1    7700 5500
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Reference_Voltage:LM4040DBZ-5 U?
+U 1 1 5D806F7C
+P 9350 3300
+F 0 "U?" V 9396 3212 50  0000 R CNN
+F 1 "LM4040DBZ-5" V 9305 3212 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9350 3100 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm4040-n.pdf" H 9350 3300 50  0001 C CIN
+	1    9350 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D83B38C
+P 9350 3450
+F 0 "#PWR?" H 9350 3200 50  0001 C CNN
+F 1 "GND" H 9355 3277 50  0000 C CNN
+F 2 "" H 9350 3450 50  0001 C CNN
+F 3 "" H 9350 3450 50  0001 C CNN
+	1    9350 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5D851100
+P 8550 3150
+F 0 "#PWR?" H 8550 3000 50  0001 C CNN
+F 1 "+12V" H 8565 3323 50  0000 C CNN
+F 2 "" H 8550 3150 50  0001 C CNN
+F 3 "" H 8550 3150 50  0001 C CNN
+	1    8550 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D89B833
+P 8950 3150
+F 0 "R?" V 8743 3150 50  0000 C CNN
+F 1 "R" V 8834 3150 50  0000 C CNN
+F 2 "" V 8880 3150 50  0001 C CNN
+F 3 "~" H 8950 3150 50  0001 C CNN
+	1    8950 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8800 3150 8550 3150
+Wire Wire Line
+	9100 3150 9350 3150
+$Comp
+L Device:R R?
+U 1 1 5D8BBE6D
+P 9950 3150
+F 0 "R?" V 9743 3150 50  0000 C CNN
+F 1 "R" V 9834 3150 50  0000 C CNN
+F 2 "" V 9880 3150 50  0001 C CNN
+F 3 "~" H 9950 3150 50  0001 C CNN
+	1    9950 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9350 3150 9800 3150
+Connection ~ 9350 3150
+Text Label 10350 3150 0    50   ~ 0
+Vref
+Wire Wire Line
+	10100 3150 10350 3150
 $EndSCHEMATC
