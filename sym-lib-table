@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name attenuverter_mixer)(type Legacy)(uri ${KIPRJMOD}/attenuverter_mixer.lib)(options "")(descr ""))
+)
