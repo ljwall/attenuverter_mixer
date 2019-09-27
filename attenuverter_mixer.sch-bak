@@ -802,23 +802,8 @@ Wire Wire Line
 Connection ~ 3300 1150
 Wire Wire Line
 	3300 1150 3300 800 
-$Comp
-L Device:R R7
-U 1 1 5DAFD93C
-P 1950 1100
-F 0 "R7" H 1800 1050 50  0000 C CNN
-F 1 "100R" H 1800 1150 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1880 1100 50  0001 C CNN
-F 3 "~" H 1950 1100 50  0001 C CNN
-	1    1950 1100
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	1950 900  1950 950 
 Wire Wire Line
 	1500 900  1950 900 
-Wire Wire Line
-	1950 1250 1950 1550
 $Comp
 L attenuverter_mixer:AudioJack1_SwitchT J5
 U 1 1 5DBA2263
@@ -981,17 +966,6 @@ Wire Wire Line
 Wire Wire Line
 	7800 2050 7800 2000
 $Comp
-L Device:D_TVS D5
-U 1 1 5DBA22F1
-P 5450 1950
-F 0 "D5" V 5400 1750 50  0000 L CNN
-F 1 "D_TVS" V 5500 1650 50  0000 L CNN
-F 2 "Diode_THT:D_DO-15_P12.70mm_Horizontal" H 5450 1950 50  0001 C CNN
-F 3 "~" H 5450 1950 50  0001 C CNN
-	1    5450 1950
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GNDPWR #PWR0116
 U 1 1 5DBA22FB
 P 5550 1350
@@ -1011,17 +985,6 @@ F 1 "GNDPWR" H 8004 2046 50  0000 C CNN
 F 2 "" H 8000 2150 50  0001 C CNN
 F 3 "" H 8000 2150 50  0001 C CNN
 	1    8000 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDPWR #PWR0118
-U 1 1 5DBA230F
-P 5450 2100
-F 0 "#PWR0118" H 5450 1900 50  0001 C CNN
-F 1 "GNDPWR" H 5454 1946 50  0000 C CNN
-F 2 "" H 5450 2050 50  0001 C CNN
-F 3 "" H 5450 2050 50  0001 C CNN
-	1    5450 2100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1049,28 +1012,8 @@ Wire Wire Line
 Connection ~ 7550 1300
 Wire Wire Line
 	7550 1300 7550 950 
-$Comp
-L Device:R R33
-U 1 1 5DBA2331
-P 6200 1250
-F 0 "R33" H 6050 1200 50  0000 C CNN
-F 1 "100R" H 6050 1300 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6130 1250 50  0001 C CNN
-F 3 "~" H 6200 1250 50  0001 C CNN
-	1    6200 1250
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6200 1050 6200 1100
 Wire Wire Line
 	5750 1050 6200 1050
-Wire Wire Line
-	6200 1400 6200 1700
-Connection ~ 5950 1700
-Wire Wire Line
-	5450 1800 5450 1700
-Wire Wire Line
-	5450 1700 5950 1700
 Wire Wire Line
 	7600 950  7550 950 
 Connection ~ 7550 950 
@@ -1627,17 +1570,6 @@ Wire Wire Line
 Wire Wire Line
 	7800 4300 7800 4250
 $Comp
-L Device:D_TVS D6
-U 1 1 5E627781
-P 5450 4200
-F 0 "D6" V 5400 4000 50  0000 L CNN
-F 1 "D_TVS" V 5500 3900 50  0000 L CNN
-F 2 "Diode_THT:D_DO-15_P12.70mm_Horizontal" H 5450 4200 50  0001 C CNN
-F 3 "~" H 5450 4200 50  0001 C CNN
-	1    5450 4200
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GNDPWR #PWR0129
 U 1 1 5E62778B
 P 5550 3600
@@ -1657,17 +1589,6 @@ F 1 "GNDPWR" H 8004 4296 50  0000 C CNN
 F 2 "" H 8000 4400 50  0001 C CNN
 F 3 "" H 8000 4400 50  0001 C CNN
 	1    8000 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDPWR #PWR0131
-U 1 1 5E62779F
-P 5450 4350
-F 0 "#PWR0131" H 5450 4150 50  0001 C CNN
-F 1 "GNDPWR" H 5454 4196 50  0000 C CNN
-F 2 "" H 5450 4300 50  0001 C CNN
-F 3 "" H 5450 4300 50  0001 C CNN
-	1    5450 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1695,28 +1616,8 @@ Wire Wire Line
 Connection ~ 7550 3550
 Wire Wire Line
 	7550 3550 7550 3200
-$Comp
-L Device:R R36
-U 1 1 5E6277C1
-P 6200 3500
-F 0 "R36" H 6050 3450 50  0000 C CNN
-F 1 "100R" H 6050 3550 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 6130 3500 50  0001 C CNN
-F 3 "~" H 6200 3500 50  0001 C CNN
-	1    6200 3500
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6200 3300 6200 3350
 Wire Wire Line
 	5750 3300 6200 3300
-Wire Wire Line
-	6200 3650 6200 3950
-Connection ~ 5950 3950
-Wire Wire Line
-	5450 4050 5450 3950
-Wire Wire Line
-	5450 3950 5950 3950
 Wire Wire Line
 	7600 3200 7550 3200
 Connection ~ 7550 3200
@@ -2025,23 +1926,8 @@ Wire Wire Line
 Connection ~ 3400 3950
 Wire Wire Line
 	3400 3950 3400 3600
-$Comp
-L Device:R R8
-U 1 1 5D9AA697
-P 2050 3900
-F 0 "R8" H 1900 3850 50  0000 C CNN
-F 1 "100R" H 1900 3950 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" V 1980 3900 50  0001 C CNN
-F 3 "~" H 2050 3900 50  0001 C CNN
-	1    2050 3900
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2050 3700 2050 3750
 Wire Wire Line
 	1600 3700 2050 3700
-Wire Wire Line
-	2050 4050 2050 4350
 $Comp
 L Device:R_POT RV3
 U 1 1 5D9AA6A8
@@ -2516,4 +2402,12 @@ F 3 "" H 10700 5800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10150 5350 10500 5350
+Wire Wire Line
+	1950 900  1950 1550
+Wire Wire Line
+	2050 3700 2050 4350
+Wire Wire Line
+	6200 1050 6200 1700
+Wire Wire Line
+	6200 3300 6200 3950
 $EndSCHEMATC

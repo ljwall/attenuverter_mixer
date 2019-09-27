@@ -460,7 +460,7 @@ F 3 "" H 5500 6000 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x05_Counter_Clockwise J0
+L Connector_Generic:Conn_02x05_Odd_Even J0
 U 1 1 5DF894B6
 P 10050 1450
 F 0 "J0" H 10100 1867 50  0000 C CNN
